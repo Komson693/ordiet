@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ระบบจัดการร้านอาหาร</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ระบบจัดการเมนูอาหาร</h1>
+        
+        <div class="form-card">
+            <h2 id="form-title">เพิ่มรายการอาหารใหม่</h2>
+            <form id="menu-form">
+                <input type="hidden" id="menu-id">
+                <input type="text" id="name" placeholder="ชื่ออาหาร" required>
+                <input type="number" id="price" placeholder="ราคา" step="0.01" required>
+                <textarea id="description" placeholder="คำอธิบาย (ไม่บังคับ)"></textarea>
+                <input type="text" id="imageUrl" placeholder="ลิงก์รูปภาพ (ไม่บังคับ)">
+                <div class="form-buttons">
+                    <button type="submit" id="submit-btn">เพิ่มเมนู</button>
+                    <button type="button" id="cancel-btn" class="hidden">ยกเลิก</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="menu-list-container">
+            <h2>รายการเมนูทั้งหมด</h2>
+            <div id="menu-list">
+                </div>
+        </div>
+    </div>
+    <script src="admin.js"></script>
+</body>
+</html>
