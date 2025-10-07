@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:3000/api';
+const API_URL = 'https://ordiet1.onrender.com';
 
 // DOM Elements
 const menuListDiv = document.getElementById('menu-list');
